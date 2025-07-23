@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lucide-react": "^0.525.0",
     "motion": "^12.23.6",
     "next": "14.2.16",
     "react": "^18",
