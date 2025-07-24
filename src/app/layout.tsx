@@ -8,9 +8,9 @@ import RootClientWrapper from "@/components/RootClientWrapper";
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr">
-      <body className="bg-gray-100 text-gray-900">
+      <body className="w-full overflow-x-hidden">
         <AppProvider>
-          <div className="max-w-7xl mx-auto px-4 flex flex-col min-h-screen">
+          <div className="flex flex-col min-h-screen">
             <RootClientWrapper>
               <main className="flex-grow">{children}</main>
               <Footer />

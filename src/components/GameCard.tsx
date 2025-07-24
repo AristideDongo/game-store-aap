@@ -1,7 +1,6 @@
 "use client";
 import { Game } from "@/types/game";
 import { motion } from "framer-motion";
-
 export default function GameCard({
   game,
   onAdd,

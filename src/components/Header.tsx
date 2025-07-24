@@ -19,6 +19,12 @@ export default function Header() {
 
         {user ? (
           <>
+            <Link
+              href="/orders"
+              className="text-sm text-gray-600 hover:underline"
+            >
+              Mes commandes
+            </Link>
             <span className="text-sm">
               Bonjour, {user.firstName ?? user.email}
             </span>

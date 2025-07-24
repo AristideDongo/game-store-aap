@@ -33,39 +33,40 @@ export default function LoginPage() {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100 p-6">
-      <form
-        className="bg-white p-6 rounded shadow w-full max-w-md"
-        onSubmit={handleSubmit}
-      >
-        <h1 className="text-2xl font-bold mb-6 text-center">Connexion</h1>
+    <div className="min-h-screen bg-cover bg-center flex items-center justify-center p-6 custom-bg">
+      <div className="backdrop-blur-md bg-white/30 p-8 rounded-xl shadow-lg w-full max-w-md">
+        <h1 className="text-3xl font-bold mb-6 text-center text-gray-800">
+          Connexion
+        </h1>
 
-        <input
-          type="email"
-          name="email"
-          placeholder="Email"
-          value={form.email}
-          onChange={handleChange}
-          className="w-full mb-4 p-2 border rounded"
-          required
-        />
-        <input
-          type="password"
-          name="password"
-          placeholder="Mot de passe"
-          value={form.password}
-          onChange={handleChange}
-          className="w-full mb-6 p-2 border rounded"
-          required
-        />
+        <form onSubmit={handleSubmit}>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email"
+            value={form.email}
+            onChange={handleChange}
+            className="w-full mb-4 p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            placeholder="Mot de passe"
+            value={form.password}
+            onChange={handleChange}
+            className="w-full mb-6 p-3 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+            required
+          />
 
-        <button
-          type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
-        >
-          Se connecter
-        </button>
-      </form>
+          <button
+            type="submit"
+            className="w-full bg-blue-600 text-white py-3 rounded hover:bg-blue-700 transition"
+          >
+            Se connecter
+          </button>
+        </form>
+      </div>
     </div>
   );
 }
